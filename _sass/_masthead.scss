@@ -25,12 +25,10 @@
 /* Site logo */
 .site-logo {
   img {
-    @include animation-duration(1.25s);
+    @include animation-duration(5s);
     @include animation-delay(0.75s);
-    @include rounded(50%);
     height: 100px;
     width: 100px;
-    border: 4px solid $white;
     @include media($medium) {
       width: 200px;
       height: 200px;
@@ -45,8 +43,8 @@
 /* Site title/name */
 .site-title {
   margin-bottom: 0;
-  @include animation-duration(1s);
-    @include animation-delay(1.23s);
+  @include animation-duration(0.73s);
+    @include animation-delay(1s);
   a {
     color: $black;
   }
@@ -59,8 +57,8 @@
   @include font-size(16);
   font-weight: 400;
   font-style: italic;
-  @include animation-duration(1s);
-    @include animation-delay(1.27s);
+  @include animation-duration(0.73s);
+    @include animation-delay(1.07s);
   @include media($medium) {
     @include font-size(20);
   }

@@ -1,0 +1,14 @@
+<header class="masthead">
+	<div class="wrap">
+		{% if page.image.feature %}
+			<img class="site-image animated fadeIn" src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}">
+		{% endif %}
+		{% if site.logo != null %}
+			<a class="site-logo" href="{{ site.url }}/" rel="home" title="{{ site.title }}">
+				<img class="animated fadeInDown" src="{{ site.url }}/images/{{ site.logo }}" width="300" height="300" alt="{{ site.title }} logo">
+			</a>
+		{% endif %}
+    <h1 class="site-title animated fadeInDown"><a href="{{ site.url }}/">{{ site.title }}</a></h1>
+		<h2 class="site-description animated fadeInDown" itemprop="description">{{ site.description }}</h2>
+	</div>
+</header>

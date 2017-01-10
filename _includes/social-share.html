@@ -1,0 +1,4 @@
+<span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&amp;text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ site.url }}{{ page.url }}{% if author.twitter %}&amp;via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<!-- /.social-share -->

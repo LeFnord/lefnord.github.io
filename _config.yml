@@ -1,0 +1,43 @@
+# Site wide configuration
+
+locale: en_US
+title: personal thoughts
+description: on this and that
+logo: rakete-neu.png
+url: https://lefnord.github.io
+search: true
+share: true
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+mathjax: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: LeFnord
+  avatar: bio-photo.jpg
+  email: pscholz.le@gmail.com
+  disqus-shortname: ''
+  twitter: le_fnord
+  github: LeFnord

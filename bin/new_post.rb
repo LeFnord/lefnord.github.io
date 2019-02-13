@@ -15,6 +15,7 @@ modified: {{{datetime}}}
 tags: []
 comments: true
 share: true
+author: LeFnord
 ---
   FILE
 end

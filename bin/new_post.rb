@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'active_support/core_ext/string'
-require 'pry'
+# require 'active_support/core_ext/string'
+# require 'pry'
 
 def template
-  <<-FILE.strip_heredoc
+<<-FILE
 ---
 layout: post
 title: {{{title}}}
@@ -17,7 +17,7 @@ comments: true
 share: true
 author: LeFnord
 ---
-  FILE
+FILE
 end
 
 date = Time.now.strftime("%F")

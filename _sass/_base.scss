@@ -31,7 +31,7 @@ body {
 }
 
 p {
-  @include font-size(18,yes,28);
+  @include font-size(16,yes,32);
 }
 
 li {
@@ -49,27 +49,30 @@ h6 {
 }
 
 h1 {
-  @include font-size(31);
+  @include font-size(23);
+  font-weight: 500;
 }
 
 h2 {
-  @include font-size(27);
+  @include font-size(20);
+  font-weight: 500;
 }
 
 h3 {
-  @include font-size(23);
+  @include font-size(17);
+  font-weight: 500;
 }
 
 h4 {
-  @include font-size(19);
+  @include font-size(16);
 }
 
 h5 {
-  @include font-size(16);
+  @include font-size(14);
 }
 
 h6 {
-  @include font-size(16);
+  @include font-size(14);
 }
 /* underlined text */
 ins,
@@ -176,6 +179,7 @@ pre,
 samp,
 tt {
   font-family: $code-font;
+  word-wrap: break-word;
 }
 
 li,

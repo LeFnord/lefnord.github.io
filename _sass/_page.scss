@@ -74,20 +74,19 @@ span + .entry-title {
 
 .entry-title {
   font-family: $alt-font;
-  font-style: italic;
-  @include font-size(31,yes,37);
-  font-weight: 400;
-  line-height: 1;
-  // letter-spacing: -3px;
+  @include font-size(37,yes,73);
+  font-weight: 800;
+  line-height: 3;
+  padding-bottom: 1rem;
   a {
     color: $black;
     text-decoration: underline;
   }
   @include media($medium) {
-    @include font-size(37,yes,42);
+    @include font-size(42,yes,87);
   }
   @include media($large) {
-    @include font-size(47,yes,53);
+    @include font-size(47,yes,99);
   }
 }
 

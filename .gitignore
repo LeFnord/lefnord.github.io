@@ -8,3 +8,4 @@ node_modules
 .jekyll-metadata
 _originals/
 _drafts/
+.jekyll-cache

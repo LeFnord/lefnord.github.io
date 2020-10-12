@@ -96,13 +96,7 @@ a {
   }
 
   &:focus {
-    outline: thin dotted;
     color: darken($link-color, 20);
-  }
-
-  &:active,
-  &:hover {
-    outline: 0;
   }
 }
 /*
@@ -179,7 +173,7 @@ pre,
 samp,
 tt {
   font-family: $code-font;
-  word-wrap: break-word;
+  // word-wrap: break-word;
 }
 
 li,

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: PG Fulltext Search outside of Rails
+title: How To … Potsgres fulltext search.
 excerpt: ''
 date: 2020-08-02 14:42 +0200
 modified: 2020-09-06 02:30 +0200
-tags: [pg, grape]
+tags: [how_to, pg]
 comments: true
 share: true
 author: LeFnord

@@ -13,8 +13,8 @@ excerpt: ''
 date: {{{datetime}}}
 modified: {{{datetime}}}
 tags: []
-comments: true
-share: true
+comments: false
+share: false
 author: LeFnord
 ---
 FILE

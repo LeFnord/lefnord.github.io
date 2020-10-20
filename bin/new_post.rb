@@ -27,7 +27,6 @@ name = "#{date}-#{ARGV.join('_')}.md"
 
 content = template.sub('{{{title}}}', title).gsub('{{{datetime}}}', datetime)
 
-
 file_name = if Dir.entries(Dir.getwd).include?('_drafts')
   File.join(Dir.getwd, '_drafts', name)
 else

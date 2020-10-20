@@ -30,7 +30,7 @@ For my app, it means a simple [grape](https://github.com/ruby-grape/grape) API, 
 
 So that was the setup …
 
-At the end of it, a model file exists, where the search will be implemented<sup>[1]</sup>.
+At the end of it, a model file exists, where the search will be implemented[^1].
 
 ```ruby
 def self.search(query)
@@ -61,4 +61,4 @@ end
 ```
 
 ---
-<sup>[1]</sup> IMHO … I personally prefer to split it up into two methods, first one – `search` – to accept the parameter and maybe doing something with it and provide it as input for the raw sql, and a second one – `query` – to represent in fact the raw SQL query, that will be called in the first method.
+[^1]: IMHO … I personally prefer to split it up into two methods, first one – `search` – to accept the parameter and maybe doing something with it and provide it as input for the raw sql, and a second one – `query` – to represent in fact the raw SQL query, that will be called in the first method.

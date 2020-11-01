@@ -27,15 +27,15 @@ body {
 body {
   font-family: $base-font;
   color: $text-color;
-  @include font-size(16);
+  @include font-size($doc-font-size);
 }
 
 p {
-  @include font-size(16,yes,32);
+  @include font-size($doc-font-size,yes,32);
 }
 
 li {
-  @include font-size(16,12,24);
+  @include font-size($doc-font-size,12,24);
 }
 /* headings */
 h1,
@@ -64,7 +64,7 @@ h3 {
 }
 
 h4 {
-  @include font-size(16);
+  @include font-size($doc-font-size);
 }
 
 h5 {
@@ -160,7 +160,7 @@ table {
 blockquote {
   font-family: $alt-font;
   font-style: italic;
-  @include font-size(16);
+  @include font-size($doc-font-size);
   padding-left: 23px;
   border-left: 7px solid $border-color;
 }

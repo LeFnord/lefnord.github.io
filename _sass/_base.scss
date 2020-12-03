@@ -31,7 +31,7 @@ body {
 }
 
 p {
-  @include font-size($doc-font-size,yes,32);
+  @include font-size($doc-font-size,yes,27);
 }
 
 li {
@@ -50,17 +50,23 @@ h6 {
 
 h1 {
   @include font-size(23);
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 57px;
+  margin-bottom: 46px;
 }
 
 h2 {
   @include font-size(20);
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 h3 {
   @include font-size(17);
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: 42px;
+  margin-bottom: 34px;
 }
 
 h4 {

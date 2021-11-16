@@ -3,7 +3,7 @@ layout: post
 title: How To … Searchkick
 excerpt: ''
 date: 2021-11-06 08:09 +0100
-modified: 2021-11-10 08:09 +0100
+modified: 2021-11-16 08:09 +0100
 tags: [how_to, searchkick]
 comments: false
 share: true
@@ -67,7 +67,7 @@ so using a `max_ngram` of 50, will result in a very big index,
 without improving the search quality itself.
 
 So we have to adapt it to our needs, and yes you guessed it … 😉
-But the [seetings](https://github.com/ankane/searchkick/blob/0d18831ae96988ed7089ffc85cd0ee36952ce254/lib/searchkick/index_options.rb#L184) are used, so it must be possible to specify them as well.
+But the [settings](https://github.com/ankane/searchkick/blob/0d18831ae96988ed7089ffc85cd0ee36952ce254/lib/searchkick/index_options.rb#L184) are used, so it must be possible to specify them as well.
 With a little trial and error, we found it
 
 ```ruby
@@ -88,9 +88,10 @@ Searchkick.model_options = {
 
 But what, if we want to define our own analyzer?
 
-> It must be said that this is not recommended, unless you know exactly what you are doing, because as already said, the available are very good and sufficient for most cases.
+> It must be said that this is not recommended, unless you know exactly what you are doing,
+> because as already said, the available ones are very good and sufficient for most cases.
 
-Ok, one can not add own ones the [predefined analyzer](https://github.com/ankane/searchkick/blob/0d18831ae96988ed7089ffc85cd0ee36952ce254/lib/searchkick/index_options.rb#L38) list.
+Ok, one can not add own ones to the [predefined analyzer](https://github.com/ankane/searchkick/blob/0d18831ae96988ed7089ffc85cd0ee36952ce254/lib/searchkick/index_options.rb#L38) list.
 But one can overwrite an existend one … for example changing the above `text_middle` analyzer
 
 ```ruby

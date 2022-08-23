@@ -31,3 +31,6 @@ on your new machine:
 - install brew, see above, but now `install.sh`
 - reinstall your packages from above list  
   or doing a kind of cleaning up, then install only base packages like 'redis'
+
+
+… to be continued
